@@ -1,25 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        li{
-            display: inline-block;
-            margin-right: 10px;
-        }
+
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
     </style>
 </head>
 <body>
-    <ul>
-        <li style="float: left;">Home</li>
-        <li style="float: left;">About</li>
-        <li style="float: left;">servie</li>
-        <li style="float: right;">Contact</li>
-    </ul>
-
-    <h2 style="text-align: center; margin-top: 250px; align-content: center;">Dr Eliana</h2>
-
+    <header>
+        <h1>Bem-vindo ao Meu Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Conteúdo da página inicial.</p>
+        </section>
+        <section id="about">
+            <h2>Sobre</h2>
+            <p>Informações sobre o site.</p>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Formas de entrar em contato.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Meu Website</p>
+    </footer>
 </body>
 </html>
+

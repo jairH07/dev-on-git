@@ -1,106 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Responsivo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Iniciar Sessao</title>
     <style>
 
-        /* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            text-align: center;
+            color: aliceblue;
+        }
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+        header{
+            background-color: #232f3d;
+            overflow: hidden;
+        }
+   .new-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 87.3vh;
+            margin: 0;
+            background-color: #0e1621;
+            
+   }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+
+   .corpo{
+    border: 1px solid black;
+    display: auto;
+    height: 300px;
+    width: 20%;
+    border-radius: 15px;
+    background-clip: border-box;
+   }
+   .container{
     text-align: center;
-}
+    text-align: center;
+    background-clip: border-box;
+   }
+   
+   footer{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #232f3d;
+    color: white;
+    padding: 1rem;
+   }
 
-nav ul {
-    list-style: none;
+   .corpo{
+    background-color: #232f3d73;
+    margin: auto;
+   }
+
+   button{
+    padding: 10px 15px;
+    background: white;
+    transition: 0.3s;
+   }
+
+   button:hover{
+          background: orangered;
+   }
+
+   html body{
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+   }
 
-nav ul li {
-    margin: 0 1rem;
-}
+   i{
+    color: white;
+   }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+   h2{
+    color: whitesmoke;
+   }
 
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-}
-
+   span{
+    color: white;
+   }
     </style>
 </head>
 <body>
+    <!--mensagens de boa vinda-->
     <header>
-        <h1>Bem-vindo ao Meu Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+       <p>Bem Vindo a Comunidade MEGA IMPERIO</p>
+       <p>-Criada e Desenvolvida Para Grande-</p>
     </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Conteúdo da página inicial.</p>
-        </section>
-        <section id="about">
-            <h2>Sobre</h2>
-            <p>Informações sobre o site.</p>
-        </section>
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Formas de entrar em contato.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Meu Website</p>
-    </footer>
+    <!--mensagem de boas vindas-->
+
+<!--Introducao do new-body que servira como uma especie de body para centralizar o login sem o footer-->
+<div class="new-body">
+    <div class="corpo">
+        <div class="container">
+            <span>Registar</span>
+            <h2>Login</h2><br>
+            <div class="username">
+                <input  type="text" class="input" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i><br>
+            </div><br>
+    
+            <div class="username">
+                <input type="password" placeholder="password" required>
+                <i class="fa-solid fa-key"></i><br>
+            </div><br>
+            <div class="input-field">
+                <a href="#"><button>Registar</button></a>
+            </div>
+            <div class="button">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Lembrar a Senha</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!--termino do nwe body-->  
+<footer>
+    <span>"Juntos formamos um Imperio"</span><br>
+    <span>© 2024</span>
+</footer>
 </body>
 </html>
 
